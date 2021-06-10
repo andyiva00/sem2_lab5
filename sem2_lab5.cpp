@@ -1,6 +1,6 @@
-// Курс: 1, Семестр: 2, Группа: МКН-116
-// Лабораторная работа: №5, Вариант: 12
-// Студенит: Тимофеев Денис 
+// Course: 1, Semester: 2, Group: МКН-116
+// Lab: №5, Variant: 12
+// Student: Timofeev Denis
 
 #include <iostream>
 #include <cmath>
