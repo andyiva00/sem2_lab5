@@ -1,5 +1,5 @@
-// Course: 1, Semester: 2, Group: ฬสอ-116
-// Lab: น5, Variant: 12
+// Course: 1, Semester: 2, Group: MKN-116
+// Lab: #5, Variant: 12
 // Student: Timofeev Denis
 
 #include <iostream>
