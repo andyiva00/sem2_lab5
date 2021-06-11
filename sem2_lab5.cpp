@@ -5,6 +5,23 @@
 #include <iostream>
 #include <cmath>
 
+template <typename T>
+T InputData(std::string varName)
+{
+    T value;
+    std::cout << "Enter " + varName + ": ";
+    std::cin >> value;
+    while (std::cin.fail())
+    {
+        std::cout << "Wrong input data, try again: ";
+        std::cin.clear();
+        std::cin.ignore(256, '\n');
+        std::cin >> value;
+    }
+
+    return value;
+}
+
 double PowerLog(double x, int n)
 {
     if (x == 0)
@@ -24,16 +41,14 @@ double PowerLog(double x, int n)
     return pow(lg_x, 1.0 / n);
 }
 
-
 int main()
 {
-    double x, y;
-    int n;
+    double x{}, y;
+    int n{};
     std::cout << "y(x, n) = pow(log10(x), 1/n)" << std::endl;
-    std::cout << "Enter x: ";
-    std::cin >> x;
-    std::cout << "Enter n: ";
-    std::cin >> n;
+
+    x = InputData<double>("x");
+    n = InputData<int>("n");
 
     try
     {
