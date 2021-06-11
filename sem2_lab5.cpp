@@ -43,8 +43,8 @@ double PowerLog(double x, int n)
 
 int main()
 {
-    double x{}, y;
-    int n{};
+    double x, y;
+    int n;
     std::cout << "y(x, n) = pow(log10(x), 1/n)" << std::endl;
 
     x = InputData<double>("x");
